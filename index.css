@@ -1,5 +1,9 @@
 /* Todo: responsible design, optimize for mobile phone browser */
+html,
 body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
     background-image: url("soda.jpg");
     background-size: cover;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
