@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     user-select: none;
+    touch-action: manipulation;
     background-image: url("soda.jpg");
     background-size: cover;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -16,19 +17,17 @@ body {
 .container {
     background-color: black;
     width: 70%;
-    height: 70%;
+    height: 80%;
     margin: 20px auto;
     border: 3px solid red;
     border-radius: 10px;
 }
 
 h1 {
-    font-size: 40px;
     margin: 40px auto;
 }
 
 h2 {
-    font-size: 60px;
     margin-top: 0;
     margin-bottom: 40px;
 }
