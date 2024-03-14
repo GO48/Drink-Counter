@@ -1,45 +1,50 @@
-/* Todo: responsible design, optimize for mobile phone browser */
+@font-face {
+	font-family: 'Loki Cola';
+	src: url("./loki_cola/LOKICOLA.TTF"), format("TTF");
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
     user-select: none;
     touch-action: manipulation;
-    background-image: url("soda.jpg");
-    background-size: cover;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
     text-align: center;
-    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #eee;
+}
+
+body{
+    background-image: url("soda.jpg");
+    background-color: #000000; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container{
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: red 2px solid; */
 }
 
-.container {
-    background-color: black;
-    width: 70%;
-    height: 80%;
-    margin: 20px auto;
-    border: 3px solid red;
-    border-radius: 10px;
+.counter-container {
+    background-color: #111111;
+    max-width: 60vw;
+    padding: 2em;
+    border: 5px solid #fe001a;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1 {
-    margin: 40px auto;
-}
-
-h2 {
-    margin-top: 0;
-    margin-bottom: 40px;
-}
-
-button {
-    font-weight: bold;
-    width: 200px;
-    color: white;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin: 10px;
+h1{
+    font-family: 'Loki Cola', Arial, sans-serif;
 }
 
 .button-container {
@@ -47,6 +52,14 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    color: #eee;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
 #increment-btn {
@@ -58,5 +71,5 @@ button {
 }
 
 #save-el {
-    font-weight: bold;
+    max-width: 90vw;
 }

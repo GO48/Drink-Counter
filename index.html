@@ -1,26 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drink Counter</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <title>Drink Counter</title>
+    </head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="index.css">
-</head>
-
-<body>
-    <div class="container">
-        <h1>Drink Counter</h1>
-        <h2 id="count-el">0</h2>
-        <div class="button-container">
-            <button id="increment-btn" onclick="increment(1)">INCREMENT ONE</button>
-            <button id="increment-btn" onclick="increment(12)">INCREMENT DOZEN</button>
-            <button id="save-btn" onclick="save()">SAVE</button>
+    <body>
+        <div class="container">
+            <div class="counter-container">
+                <h1>Drink Counter</h1>
+                <h2 id="count-el">0</h2>
+                <div class="button-container">
+                    <button id="increment-btn" onclick="increment(1)">INCREMENT ONE</button>
+                    <button id="increment-btn" onclick="increment(12)">INCREMENT DOZEN</button>
+                    <button id="save-btn" onclick="save()">SAVE</button>
+                </div>
+                <h3 id="save-el">Previous entries: </p>
+                <script src="index.js"></script>
+            </div>
         </div>
-        <p id="save-el">Previous entries: </p>
-        <script src="index.js"></script>
-    </div>
-</body>
+    </body>
 
 </html>
